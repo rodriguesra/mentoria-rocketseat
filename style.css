@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+}
+
+body::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 33.33vh;
+    content: "";
+    background-color: #535971;
+}
+
+.page {
+    width: 736px;
+    margin: 0 auto;
+}
+
+header {
+    width: 50%;
+    margin-top: 6rem;
+}
+
+header h1 {
+    font-family: Staatliches, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+header p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 2rem;
+    padding: 4rem;
+    border-radius: 8px 8px 0 0;
+    background: white;
+}
+
+fieldset {
+    font-family: Staatliches, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    color: #535971;
+    border: none;
+}
+
+fieldset legend {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e6e6f0;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group .input-wrapper {
+    flex: 1;
+}
+
+form label {
+    font-family: Poppins, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: #4e4958;
+}
+
+form label span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.25rem; /* 166.667% */
+    color: #c1bccc;
+}
+
+form input {
+    height: 3.5rem;
+    border: 1px solid #e6e6f0;
+    border-radius: 0.5rem;
+    background: #fafafc;
+}
+
+.col-3 {
+    display: flex;
+    gap: 1rem;
+}
+
+.col-3 > .input-wrapper {
+    flex: 1;
+}
+
+.col-3 > div:nth-child(1) {
+    flex: 2;
+}
+
+.date-header {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 6rem;
+    padding: 0 4rem;
+    border-radius: 0 0 8px 8px;
+    background: #535971;
+}
+
+button {
+    font-family: Staatliches, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38rem;
+    height: 3rem;
+    padding: 0.9375rem 2.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 1.25rem;
+    background: #FF5374;
+    gap: 0.625rem;
+}
