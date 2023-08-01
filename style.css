@@ -33,13 +33,19 @@ header {
 header h1 {
     font-family: Staatliches, sans-serif;
     font-size: 3rem;
-    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
 }
 
 header p {
     font-family: Poppins, sans-serif;
     font-size: 1.25rem;
-    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #FFF;
 }
 
 form {
@@ -63,9 +69,19 @@ fieldset {
 }
 
 fieldset legend {
+    font-family: Staatliches, sans-serif;
+    font-size: 1.5rem;
+    /*font-weight: bold;*/
+    font-style: normal;
+    line-height: 2.125rem; /* 141.667% */
     width: 100%;
     padding-bottom: 0.5rem;
+    color: #535971;
     border-bottom: 1px solid #e6e6f0;
+}
+
+input:invalid {
+    border: 1px solid #ff5374;
 }
 
 .input-group {
@@ -78,6 +94,7 @@ fieldset legend {
 .input-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 0.5rem;
 }
 
 .input-group .input-wrapper {
@@ -87,8 +104,9 @@ fieldset legend {
 form label {
     font-family: Poppins, sans-serif;
     font-size: 0.875rem;
-    line-height: 1.5rem;
-    margin-top: 1rem;
+    /*line-height: 1.5rem;*/
+    /*height: 1.5rem;*/
+    /*margin-top: 1rem;*/
     color: #4e4958;
 }
 
@@ -96,7 +114,12 @@ form label span {
     font-family: Poppins, sans-serif;
     font-size: 0.75rem;
     line-height: 1.25rem; /* 166.667% */
+    margin-left: 0.35rem;
     color: #c1bccc;
+}
+
+form label span:hover {
+    color: #4e4958;
 }
 
 form input {
@@ -136,17 +159,24 @@ footer {
     background: #535971;
 }
 
-button {
+footer .button {
     font-family: Staatliches, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 38rem;
-    height: 3rem;
+    height: 3.47825rem;
     padding: 0.9375rem 2.5rem;
+    cursor: pointer;
     color: #fff;
     border: none;
     border-radius: 1.25rem;
     background: #FF5374;
     gap: 0.625rem;
+}
+
+footer .button:hover {
+    background: #ff2d54;
 }

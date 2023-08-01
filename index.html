@@ -22,30 +22,30 @@
         <h1>Mentoria</h1>
         <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
-    <form>
+    <form id="form">
         <fieldset>
             <legend>Informações pessoais</legend>
             <div class="input-group">
                 <div class="input-wrapper">
                     <label for="name">Nome</label>
-                    <input id="name" type="text"/>
+                    <input id="name" required type="text"/>
                 </div>
                 <div class="input-wrapper">
                     <label for="surname">Sobrenome</label>
-                    <input id="surname" type="text"/>
+                    <input id="surname" required type="text"/>
                 </div>
             </div>
             <div class="input-wrapper">
                 <label for="email"
                 >Email <span>(digite um email válido)</span></label
                 >
-                <input id="email" type="email"/>
+                <input id="email" required type="email"/>
             </div>
             <div class="input-wrapper">
                 <label for="password"
                 >Senha <span>(mínimo de 6 caracteres)</span></label
                 >
-                <input id="password" type="email"/>
+                <input id="password" minlength="6" type="password"/>
             </div>
         </fieldset>
         <br/>
@@ -96,7 +96,7 @@
         </fieldset>
     </form>
     <footer>
-        <button>Salvar</button>
+        <input class="button" form="form" type="submit" value="Salvar"/>
     </footer>
 </div>
 </body>
